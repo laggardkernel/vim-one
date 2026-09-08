@@ -508,12 +508,12 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   " - purple from Kaledoscope
   if &background == 'light'
     call <sid>X('DiffAdd',    ['#022B00', '233'], ['#D9FBE3', '194'], '')
-    call <sid>X('DiffDelete', ['#FBE1E4', '224'], ['#FBE1E4', '224'], 'none')
+    call <sid>X('DiffDelete', ['#48313B', '224'], ['#FBE1E4', '224'], 'none')
     call <sid>X('DiffChange', s:mono_1,           ['#F6F1FF', '231'], '')
     call <sid>X('DiffText',   ['#1E162F', '235'], ['#D4BDFF', '183'], 'none')
   elseif &background == 'dark'
     call <sid>X('DiffAdd',    ['#D9FBE3', '194'], ['#264B3A', '237'], '')
-    call <sid>X('DiffDelete', ['#48313B', '237'], ['#48313B', '237'],  'none')
+    call <sid>X('DiffDelete', ['#FBE1E4', '237'], ['#48313B', '237'],  'none')
     call <sid>X('DiffChange', s:mono_1,           ['#3B2C5C', '238'], '')
     call <sid>X('DiffText',   ['#F6F1FF', '231'], ['#6548A3',  '61'], 'none')
   endif
